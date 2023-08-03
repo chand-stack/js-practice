@@ -1,23 +1,10 @@
-function traffic(light){
-if(light === 'Red'){
-    return 'you are in danger'
-}
-else if (light === 'Yellow'){
-    return 'you have to stop'
-}
-else if(light === 'Green'){
-    return 'you can go now'
-}
-}
+let arr = ['moduele unlock','video practice', 'video notes', 'module practice', 'bujhte hobe']
+let arr2 = arr.slice().reverse();
+let i = 0;
 
-let firstLight = 'Red'
-let redlight = traffic(firstLight);
-console.log('light is red',redlight);
-
-let secondLight = 'Yellow'
-const yellowLight = traffic(secondLight);
-console.log('light is yellow',yellowLight);
-
-let thirdLight = 'Green'
-const greenLight = traffic(thirdLight);
-console.log('light is green',greenLight);
+while(i<arr2.length){
+    let element = arr2[i];
+    i++
+    console.log(element);
+    
+}
