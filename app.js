@@ -1,12 +1,8 @@
-function oneLine(lineOne, Linetwo){
-
-    let sen = lineOne + ' '+ Linetwo;
-    return sen;
-
+function deviNum(num){
+    let devidedNumber = num % 5;
+    return devidedNumber;
 }
 
-let first = "I'm going to be";
-let second = "an awesome web developer"
-
-const fuuLine = oneLine(first, second)
-console.log(fuuLine);
+let sara = 119;
+const devidedNum = deviNum(sara);
+console.log(devidedNum);
