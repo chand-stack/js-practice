@@ -1,26 +1,18 @@
+function lowestNum(arr){
+ let number = 0;
 
-function maxMark(jimMark, delaMark, chinkuMark){
-
-  const highMark = Math.max(jimMark, delaMark, chinkuMark);
-  if (highMark===jimMark){
-    return 'Jim cake khaibo'
-  }
-  else if(highMark===delaMark){
-    return 'dela cake khaibo'
-  }
-  else if(highMark===chinkuMark){
-    return 'chinku cake khaibo'
-  }
-
+ for(let i=0; i<arr.length; i++){
+    const index = i;
+    const element = arr[index]
+    if (element==Math.min(...arr)){
+        number=element
+    }
+ }
+ return number;
 }
 
 
+const num= [167, 190, 120, 165, 137]
 
-
-
-const x = 69;
-const y = 97;
-const z = 99;
-
-const largeMark = maxMark(x,y,z)
-console.log(largeMark);
+const lownum = lowestNum(num)
+console.log(lownum);
