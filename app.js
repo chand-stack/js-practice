@@ -1,23 +1,17 @@
 
-function revers(lines){
-let wordz = lines.split(' ')
-const blabla= []
+function uniquename(arr){
+    const uniqArray=[];
 
-for(let i = wordz.length-1; i>=0; i--){
-    const index = i;
-    const element = wordz[index];
-    blabla.push(element)
+    for(let i = 0; i<arr.length; i++){
+        const element= arr[i];
+        if(uniqArray.includes(element)===false){
+            uniqArray.push(element);
+        }
+    }
+return uniqArray;
+
 }
-const full= blabla.join(' ');
-return full
 
-}
-
-
-
-
-
-
-
-let lyric = ' dubechi ami tomar chokher ononto mayay'
-console.log(revers(lyric));
+const names = ['abul', 'babul', 'cabul', 'dabul', 'ebul', 'babul', 'abul', 'kabul', 'gabul', 'cabul', 'babul', 'abul', 'abul']
+const result = uniquename(names);
+console.log(result);
