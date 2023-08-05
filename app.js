@@ -1,18 +1,23 @@
-function lowestNum(arr){
- let number = 0;
 
- for(let i=0; i<arr.length; i++){
+function revers(lines){
+let wordz = lines.split(' ')
+const blabla= []
+
+for(let i = wordz.length-1; i>=0; i--){
     const index = i;
-    const element = arr[index]
-    if (element==Math.min(...arr)){
-        number=element
-    }
- }
- return number;
+    const element = wordz[index];
+    blabla.push(element)
+}
+const full= blabla.join(' ');
+return full
+
 }
 
 
-const num= [167, 190, 120, 165, 137]
 
-const lownum = lowestNum(num)
-console.log(lownum);
+
+
+
+
+let lyric = ' dubechi ami tomar chokher ononto mayay'
+console.log(revers(lyric));
