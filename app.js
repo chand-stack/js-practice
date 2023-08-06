@@ -6,15 +6,19 @@ var shoppingCart={
   pen : 25
 }
 
-let penCount = shoppingCart.pen;
+// let penCount = shoppingCart.pen;
 
-let penCount = shoppingCart['pen']
+// let penCount = shoppingCart['pen']
 
-let penCount = Object.keys(shoppingCart);
+// let penCount = Object.keys(shoppingCart);
 
-let values= Object.values(shoppingCart);
+// let values= Object.values(shoppingCart);
 
-let propertyName = 'keyboard'
+let propertyName = 'sunglass'
 let propertyvalue = shoppingCart[propertyName]
 
-console.log(propertyvalue);
+shoppingCart.sunglass= 30;
+shoppingCart['sunglass']= 35;
+shoppingCart[propertyName]=40;
+
+console.log(shoppingCart);
