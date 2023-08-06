@@ -1,19 +1,17 @@
- function odd_even(num){
+ function findLeapYear(arr){
+const theLeapYear = [];
 
-  if(num%2 === 0){
-    return 'number is even'
-  }else if(num%2!==0){
-    return 'number is odd'
-  }
+for (let i = 0; i<arr.length; i++){
+    let element = arr[i];
+    if(element%4===0){
+        theLeapYear.push(element);
+    }
+}
+return theLeapYear
 
  }
 
+ let yearArr= [2023, 2024, 2025, 2028, 2030];
 
-
-
-
-
- let number = 50;
- const finalNumber = odd_even(number);
- console.log(finalNumber);
-
+ let leapYear = findLeapYear(yearArr);
+ console.log(leapYear);
