@@ -1,11 +1,15 @@
 
 
-function make_avg(assignment1, assignment2, assignment3){
+function make_avg(arr,size){
 
-let sum = assignment1+assignment2+assignment3;
-let avg = sum / 3
+  let sum = 0;
+  for(let i=0; i<size; i++){
+    let element = arr[i]
+    sum = sum+element;
+  }
+  let avg = sum/size;
+  return avg
 
-return avg;
 
 }
 
@@ -15,9 +19,9 @@ return avg;
 
 
 
-let mark1 = 60;
-let mark2 = 60;
-let mark3 = 60
+let markArray = [65, 60, 75, 50, 55, 40 ,80, 100];
+let marksize = markArray.length;
 
-const totalAvg = make_avg(mark1, mark2, mark3)
+const totalAvg = make_avg(markArray,marksize);
 console.log(totalAvg);
+
