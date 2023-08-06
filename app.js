@@ -1,21 +1,20 @@
-function onlypositive(numberArr){
-  const positive=[]
-
-  for(let i = 0; i<numberArr.length; i++){
-    const element = numberArr[i];
-    if(element>=0){
-        positive.push(element);
-    }else if(element<0){
-        break;
-    }
-  }
-  return positive;
+var shoppingCart={
+  books : 3,
+  sunglass : 2,
+  keyboard : 5,
+  mouse : 1,
+  pen : 25
 }
 
+let penCount = shoppingCart.pen;
 
+let penCount = shoppingCart['pen']
 
-const numArr = [45, 87, 96, 11, 63, -56, 71, 28];
+let penCount = Object.keys(shoppingCart);
 
-const positiveArr = onlypositive(numArr);
-console.log(positiveArr);
+let values= Object.values(shoppingCart);
 
+let propertyName = 'keyboard'
+let propertyvalue = shoppingCart[propertyName]
+
+console.log(propertyvalue);
