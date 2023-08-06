@@ -1,27 +1,19 @@
+ function odd_even(num){
 
-
-function make_avg(arr,size){
-
-  let sum = 0;
-  for(let i=0; i<size; i++){
-    let element = arr[i]
-    sum = sum+element;
+  if(num%2 === 0){
+    return 'number is even'
+  }else if(num%2!==0){
+    return 'number is odd'
   }
-  let avg = sum/size;
-  return avg
 
-
-}
+ }
 
 
 
 
 
 
-
-let markArray = [65, 60, 75, 50, 55, 40 ,80, 100];
-let marksize = markArray.length;
-
-const totalAvg = make_avg(markArray,marksize);
-console.log(totalAvg);
+ let number = 50;
+ const finalNumber = odd_even(number);
+ console.log(finalNumber);
 
