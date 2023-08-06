@@ -1,17 +1,43 @@
- function findLeapYear(arr){
-const theLeapYear = [];
 
-for (let i = 0; i<arr.length; i++){
-    let element = arr[i];
-    if(element%4===0){
-        theLeapYear.push(element);
+function counting(line){
+
+    let parts = line.split('');
+    let vowelWord = []
+
+    for(let i = 0; i<parts.length; i++){
+        const element = parts[i];
+        
+        if(element==='a' || element==='e' || element==='i' || element==='o' || element==='u'){
+            vowelWord.push(element);
+        }
+        
     }
+    return vowelWord 
 }
-return theLeapYear
 
- }
+function consonentCount(lines){
+    let parts = lines.split('');
+    let consonentWord = []
 
- let yearArr= [2023, 2024, 2025, 2028, 2030];
 
- let leapYear = findLeapYear(yearArr);
- console.log(leapYear);
+    for(let i = 0; i<parts.length; i++){
+        const element = parts[i];
+        
+         if (element!=='a' && element!=='e' && element!=='i' && element!=='o' && element!=='u' && element!== ' '){
+            consonentWord.push(element)
+        }
+        
+    }
+    return consonentWord
+
+}
+
+
+
+const lyric = 'tumi bondhu kala pakhi ami jeno ki bososnto. batashe tomay bolte parini'
+const total = counting(lyric);
+console.log('Vowel Words are: ',total);
+
+
+const consonentTotal = consonentCount(lyric)
+console.log('Consonent Words are: ',consonentTotal);
