@@ -4,7 +4,7 @@ function isJavaScriptFile(file){
         return 'Please provide a file'
     }else{
         if(file.toLowerCase().endsWith('.js'.toLowerCase())){
-              return true
+            return true
         }else{
             return false
         }
@@ -13,4 +13,4 @@ function isJavaScriptFile(file){
 
 }
 
-console.log(isJavaScriptFile('practice.js'))
+console.log(isJavaScriptFile('practice.JS'))
