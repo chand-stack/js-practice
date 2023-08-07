@@ -1,16 +1,15 @@
-function isJavaScriptFile(file){
-
-    if(typeof file !== 'string'){
-        return 'Please provide a file'
+function isLGSeven(num){
+    if(typeof num !== "number"){
+        return 'Please provide a number'
     }else{
-        if(file.toLowerCase().endsWith('.js'.toLowerCase())){
-            return true
-        }else{
-            return false
-        }
+    let differ = num - 7;;
+    if(differ<7){
+        return differ
+    }else{
+        return num*2;
     }
-
+    }
 
 }
 
-console.log(isJavaScriptFile('practice.JS'))
+console.log(isLGSeven(6))
