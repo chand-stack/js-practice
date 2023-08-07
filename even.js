@@ -1,23 +1,22 @@
-function findingBadData(numArray){
+function gemsToDiamond(x,y,z){
+if(typeof x !== "number" || typeof y !== "number" || typeof z !== "number"){
+    return 'please provide us a number'
+}
+    let xgemsPower = 21;
+    let ygemsPower = 32;
+    let zgemsPower = 43;
+    let totalGems = (xgemsPower*x)+(ygemsPower*y)+(zgemsPower*z)
 
-    if(Array.isArray(numArray)===false ){
-        return 'please enter an Array'
+    if(totalGems>2000){
+        return totalGems - 2000;
     }
     else{
-        let badData = 0;
-        for(let i = 0; i<numArray.length; i++){
-            let elements = numArray[i];
-            if(typeof elements !== "number"){
-                return 'please enter an Array of numbers'
-            }
-            else if(elements<0){
-                badData++;
-            }
-            
-        }return badData;
+        return totalGems
     }
+    
+   
 
 }
 
-
-console.log(findingBadData([2,-5,-7,-23, -5, -8]))
+const output = gemsToDiamond(100,5,1);
+console.log(output);
