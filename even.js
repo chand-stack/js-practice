@@ -1,24 +1,16 @@
-const shoppingCart = [
-    { name : 'shoe', price:1200},
-    { name:'shirt', price:2200},
-    { name:'pant', price:3700},
-    {name:'belt', price:600}
+function isInteger(number){
 
-]
-
-function totalCost(shoppingList){
-    let expense = 0;
-
-    for(let i =0; i<shoppingList.length; i++){
-        const elements = shoppingList[i];
-        expense = expense+elements.price;
+    if(typeof number !== 'number'){
+        return 'please provide a number'
     }
-
-    return expense;
-
-
+    else{
+        if(number%1===0){
+            return true
+        }else{
+            return false
+        }
+    }
 
 }
 
-const totalExpense = totalCost(shoppingCart);
-console.log(totalExpense);
+console.log(isInteger(10.0));
