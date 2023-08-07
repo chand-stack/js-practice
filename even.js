@@ -1,16 +1,16 @@
-function isInteger(number){
+function isJavaScriptFile(file){
 
-    if(typeof number !== 'number'){
-        return 'please provide a number'
-    }
-    else{
-        if(number%1===0){
-            return true
+    if(typeof file !== 'string'){
+        return 'Please provide a file'
+    }else{
+        if(file.toLowerCase().endsWith('.js'.toLowerCase())){
+              return true
         }else{
             return false
         }
     }
 
+
 }
 
-console.log(isInteger(10.0));
+console.log(isJavaScriptFile('practice.js'))
