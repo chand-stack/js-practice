@@ -22,5 +22,5 @@ function sortMaker(arr) {
 }
 
 
-const output = sortMaker([4, 4]);
+const output = sortMaker([4, 4, 5]);
 console.log(output);
