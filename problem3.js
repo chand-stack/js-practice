@@ -1,12 +1,12 @@
 function sortMaker(arr) {
     if (!Array.isArray(arr) || arr.length !== 2) {
-        return 'Please Enter an Array'
+        return 'Please Enter an Array of two numbers'
     }
     for (let i = 0; i < arr.length; i++) {
         const element = arr[i];
         // console.log(element);
         if (element < 0) {
-            return 'please Enter a number of Array'
+            return 'Invalid input'
         }
     }
 
@@ -22,5 +22,5 @@ function sortMaker(arr) {
 }
 
 
-const output = sortMaker([4, 4, 5]);
+const output = sortMaker([4,- 4]);
 console.log(output);
