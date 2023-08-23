@@ -118,16 +118,38 @@ const products = [
 // const samsung = new Phones('Samsung', 120000)
 // console.log(samsung)
 
-class Shoes{
-    constructor(brand, price){
-        this.brand = brand;
+// class Shoes{
+//     constructor(brand, price){
+//         this.brand = brand;
+//         this.price = price;
+//     }
+// }
+
+// const bata = new Shoes ('Bata', 5000)
+// console.log(bata)
+// const adidas = new Shoes('Adidas', 6000)
+// console.log(adidas)
+// const nike = new Shoes('Air Jordan', 20000)
+// console.log(nike)
+
+ class Vehicle{
+    constructor(name, price){
+        this.name = name;
         this.price = price;
     }
-}
+ }
 
-const bata = new Shoes ('Bata', 5000)
-console.log(bata)
-const adidas = new Shoes('Adidas', 6000)
-console.log(adidas)
-const nike = new Shoes('Air Jordan', 20000)
-console.log(nike)
+ class Bus extends Vehicle{
+    constructor(name, price, seat, ticketPrice){
+        super(name,price)
+        this.seat = seat
+        this.ticketPrice = ticketPrice
+    }
+ }
+
+ class Truck extends Vehicle{
+    constructor(name, price, load){
+        super(name, price)
+        this.load= load  
+    }
+ }
