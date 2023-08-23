@@ -58,8 +58,50 @@
 // const selected = players.filter(x => x%2 === 1)
 // console.log(selected);
 
-const friends = ['tom', 'john', 'micheal', 'oliver']
+// const friends = ['tom', 'john', 'micheal', 'oliver']
 
-const oddChar = friends.filter(x => x.length%2 === 0)
+// const oddChar = friends.filter(x => x.length%2 === 0)
 
-console.log(oddChar)
+// console.log(oddChar)
+
+// const friends = ['tom', 'john', 'micheal', 'oliver']
+
+// const players = [75, 65 , 67, 72, 55, 59];
+
+// const selected = players.find(p => p > 70)
+// console.log(selected)
+
+// const numbers = [75, 65 , 67, 72, 55, 59];
+// const sum = numbers.reduce((p,c) => p+c)
+// console.log(sum)
+
+const products = [
+    {id: 1, name:'Lenovo', price:65000},
+    {id: 2, name:'Dell', price:45000},
+    {id: 3, name:'Hp', price:40000},
+    {id: 4, name:'Mac', price:150000}
+]
+
+// const names = products.map(x => x.name)
+// // console.log(names)
+// const prices = products.map(p => p.price);
+// // console.log(prices)
+
+// const filter = products.filter(p => p.price>50000);
+// // console.log(filter)
+
+// const find = products.find(p => p.price < 50000);
+// // console.log(find)
+
+// const total = products.reduce((p,c) => p + c.price,0)
+// console.log(total)
+
+class Teacher{
+    constructor(name, subject){
+        this.name = name;
+        this.subject = subject
+    }
+}
+
+const alim = new Teacher('Alim', 'English')
+console.log(alim)
