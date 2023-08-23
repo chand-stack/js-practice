@@ -1,12 +1,21 @@
-var num = ['module unlock', 'video practice', 'video notes', 'module practice', 'support session']
-var rnum = num.slice().reverse();
-
-var i = 0;
-
-while(i<rnum.length){
-   var items = rnum[i];
-   console.log(items);
-   i++;
+let data = {
+   sophia:{
+      id:33,
+      study:[
+         {
+            primary:[
+               {school_name: "ABC primary school"},
+               {location : "peters burg"}
+            ]
+         },
+         {
+            secondary:
+            [
+               {school_name: "ABC secondary school"},
+               {location: "St Lorence"}
+            ]
+         }
+      ]
+   }
 }
-
 
