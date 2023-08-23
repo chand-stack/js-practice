@@ -96,12 +96,22 @@ const products = [
 // const total = products.reduce((p,c) => p + c.price,0)
 // console.log(total)
 
-class Teacher{
-    constructor(name, subject){
-        this.name = name;
-        this.subject = subject
+// class Teacher{
+//     constructor(name, subject){
+//         this.name = name;
+//         this.subject = subject
+//     }
+// }
+
+// const alim = new Teacher('Alim', 'English')
+// console.log(alim)
+
+class Phones{
+    constructor(model, price){
+        this.model = model
+        this.price = price
     }
 }
 
-const alim = new Teacher('Alim', 'English')
-console.log(alim)
+const iphone = new Phones('Iphone', 150000)
+const samsung = new Phones('Samsung', 120000)
