@@ -1,10 +1,10 @@
-let oddArray = [1,3,5,7,9]
+const instructor =[
+   { name:'Nodi', age:28, position:'Senior'},
+   { name:'Akil', age:26, position:'Junior'},
+   { name:'Shobuj', age:30, position:'Senior'}
+]
 
-const evenArray = [];
+const names = instructor.filter(x => x.position === "Senior")
 
-for(const num of oddArray){
-   let numEven = num+1
-   evenArray.push(numEven);
-}
-
-console.log(evenArray)
+const teacherName = names.map(x => x.name)
+console.log(teacherName)
