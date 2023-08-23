@@ -50,10 +50,16 @@
 
 
 
-const numbers = [ 1, 5, 6, 4, 15]; 
+// const numbers = [ 1, 5, 6, 4, 15]; 
 
-const players = [75, 65 , 67, 72, 55, 59];
-// const selected = players.filter(x => x === 67);
-// const selected = players.filter(x => x%2 == 0 );
-const selected = players.filter(x => x%2 === 1)
-console.log(selected);
+// const players = [75, 65 , 67, 72, 55, 59];
+// // const selected = players.filter(x => x === 67);
+// // const selected = players.filter(x => x%2 == 0 );
+// const selected = players.filter(x => x%2 === 1)
+// console.log(selected);
+
+const friends = ['tom', 'john', 'micheal', 'oliver']
+
+const oddChar = friends.filter(x => x.length%2 === 0)
+
+console.log(oddChar)
