@@ -19,3 +19,4 @@ let data = {
    }
 }
 
+console.log(data.sophia.study[1].secondary[1])
