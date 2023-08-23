@@ -106,12 +106,28 @@ const products = [
 // const alim = new Teacher('Alim', 'English')
 // console.log(alim)
 
-class Phones{
-    constructor(model, price){
-        this.model = model
-        this.price = price
+// class Phones{
+//     constructor(model, price){
+//         this.model = model
+//         this.price = price
+//     }
+// }
+
+// const iphone = new Phones('Iphone', 150000)
+// console.log(iphone)
+// const samsung = new Phones('Samsung', 120000)
+// console.log(samsung)
+
+class Shoes{
+    constructor(brand, price){
+        this.brand = brand;
+        this.price = price;
     }
 }
 
-const iphone = new Phones('Iphone', 150000)
-const samsung = new Phones('Samsung', 120000)
+const bata = new Shoes ('Bata', 5000)
+console.log(bata)
+const adidas = new Shoes('Adidas', 6000)
+console.log(adidas)
+const nike = new Shoes('Air Jordan', 20000)
+console.log(nike)
