@@ -1,22 +1,10 @@
-let data = {
-   data:[
-      {
-         bookId : 1,
-         bookDetails : {
-            name: "habluder adda",
-            category : "XYZ",
-            price : "20$"
-         },
-         bookCategory : "Basic",
-      },
-      {
-         bookId : 2,
-         bookDetails :{
-            name : "gobluder adda",
-            category : "ABC",
-            price : "40$",
-         },
-         bookCategory : "beginner"
-      }
-   ]
+let oddArray = [1,3,5,7,9]
+
+const evenArray = [];
+
+for(const num of oddArray){
+   let numEven = num+1
+   evenArray.push(numEven);
 }
+
+console.log(evenArray)
