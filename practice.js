@@ -1,22 +1,25 @@
-let data = {
-   sophia:{
-      id:33,
-      study:[
-         {
-            primary:[
-               {school_name: "ABC primary school"},
-               {location : "peters burg"}
-            ]
-         },
-         {
-            secondary:
-            [
-               {school_name: "ABC secondary school"},
-               {location: "St Lorence"}
-            ]
-         }
-      ]
+let students = {
+   name: "jack",
+   section : "C",
+   class : "IX",
+   address : {
+      "building no": 12,
+      "street": "St. jonson",
+      "city": "Petersburg",
+      "country": "UK"
+   },
+   3333:{
+      name:"herry",
+      section: "D",
+      class : "X",
+      address : {
+         "building no" : 85,
+         "street" : "DC road",
+         "city" : "Kachukhet",
+         "country" : "Bangladesh"
+      }
    }
 }
 
-console.log(data.sophia.study[1].secondary[1])
+console.log(students.address["city"])
+console.log(students[3333].name)
