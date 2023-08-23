@@ -22,5 +22,3 @@ function sortMaker(arr) {
 }
 
 
-const output = sortMaker([4,- 4]);
-console.log(output);
